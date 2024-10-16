@@ -1,0 +1,90 @@
+{
+    "name": "LTA-HS",
+    "type": "motorized actuator",
+    "spec": {
+        "axis": 2,
+        "travel range": {
+            "value": 50,
+            "unit": "mm"
+        },
+        "maximum speed": {
+            "value": 5,
+            "unit": "mm/s"
+        },
+        "minimum incremental motion": {
+            "value": 0.10,
+            "unit": "um"
+        },
+        "push force": {
+            "value": 50,
+            "unit": "N"
+        },
+        "pull force": {
+            "value": 40,
+            "unit": "N"
+        },
+        "accuracy": {
+            "typical": {
+                "value": "+-2.2",
+                "unit": "um"
+            },
+            "guaranteed": {
+                "value": "+-5.0",
+                "unit": "um"
+            }
+        },
+        "bi-directional repeatability": {
+            "typical": {
+                "value": "+-0.30",
+                "unit": "um"
+            },
+            "guaranteed": {
+                "value": "+-1.0",
+                "unit": "um"
+            }
+        },
+        "uni-directional repeatability": {
+            "typical": {
+                "value": "+-0.10",
+                "unit": "um"
+            },
+            "guaranteed": {
+                "value": "+-0.25",
+                "unit": "um"
+            }
+        },
+        "origin repeatability": {
+            "value": "+-2",
+            "unit": "um"
+        },
+        "cable length": {
+            "value": 3,
+            "unit": "m"
+        },
+        "vacuum compatibility": "No",
+        "weight": {
+            "value": 0.48,
+            "unit": "kg"
+        },
+        "MTBF": {
+            "value": 10000,
+            "unit": "h (25% load, 30% duty cycle)"
+        },
+        "maximum power consumption": {
+            "value": 10,
+            "unit": "W"
+        },
+        "compliance": "RoHS 3, CE"
+    },
+    "setting": {
+        "serial_number": "B05_01_17361_0624",
+        "real_resolution": {
+            "value": 0.0000353728,
+            "unit": "mm"
+        },
+        "backlash": {
+            "value": 0.01000,
+            "unit": "mm"
+        }
+    }
+}

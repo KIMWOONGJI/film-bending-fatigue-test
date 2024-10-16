@@ -1,0 +1,458 @@
+{
+    "name": "ESP300",
+    "type": "stage controller",
+    "cmd": {
+        "general_mode_selection": {
+            "enable_disable_dio_jog_mode": {
+                "command": "BQ"
+            },
+            "set_dac_offset": {
+                "command": "DO"
+            },
+            "set_position_display_resolution": {
+                "command": "FP"
+            },
+            "lock_unlock_keyboard": {
+                "command": "LC"
+            },
+            "power_off": {
+                "command": "MF"
+            },
+            "power_on": {
+                "command": "MO"
+            },
+            "update_unidriver_amplifier": {
+                "command": "QD"
+            },
+            "reset_the_controller": {
+                "command": "RS"
+            },
+            "set_trajectory_mode": {
+                "command": "TJ",
+                "nn": {
+                    "trapezoidal_mode":                             1,
+                    "s_curve_mode":                                 2,
+                    "jog_mode":                                     3,
+                    "slave_to_master_s_desired_position_trajectory":4,
+                    "slave_to_master_s_actual_position_feedback":   5,
+                    "slave_to_master_s_actual_velocity_for_jogging":6
+                }
+            },
+            "set_amplifier_configuration": {
+                "command": "ZA"
+            },
+            "set_feedback_configuration": {
+                "command": "ZB"
+            },
+            "set_e_stop_configuration": {
+                "command": "ZE"
+            },
+            "set_following_error_configuration": {
+                "command": "ZF"
+            },
+            "set_hardware_limit_configuration": {
+                "command": "ZH"
+            },
+            "set_software_limit_configuration": {
+                "command": "ZS"
+            },
+            "get_esp_system_configuration": {
+                "command": "ZU"
+            },
+            "set_system_configuration": {
+                "command": "ZZ"
+            }
+        },
+        "status_functions": {
+            "get_target_position": {
+                "command": "DP"
+            },
+            "get_working_speed": {
+                "command": "DV"
+            },
+            "get_stage_model_and_serial_number": {
+                "command": "ID"
+            },
+            "get_axis_motion_status": {
+                "command": "MD"
+            },
+            "get_hardware_status": {
+                "command": "PH"
+            },
+            "get_error_message": {
+                "command": "TB"
+            },
+            "get_error_number": {
+                "command": "TE"
+            },
+            "get_position": {
+                "command": "TP"
+            },
+            "get_controller_status": {
+                "command": "TS"
+            },
+            "get_velocity": {
+                "command": "TV"
+            },
+            "get_controller_activity": {
+                "command": "TX"
+            },
+            "get_firmware_version": {
+                "command": "VE"
+            },
+            "get_available_program_memory": {
+                "command": "XM"
+            }
+        },
+        "motion_position_control": {
+            "abort_motion": {
+                "command": "AB"
+            },
+            "define_home": {
+                "command": "DH"
+            },
+            "move_to_hardware_travel_limit": {
+                "command": "MT"
+            },
+            "move_indefinitely": {
+                "command": "MV"
+            },
+            "move_to_nearest_index": {
+                "command": "MZ"
+            },
+            "origin_searching": {
+                "command": "OR"
+            },
+            "move_absolute": {
+                "command": "PA"
+            },
+            "move_relative": {
+                "command": "PR"
+            },
+            "stop_motion": {
+                "command": "ST"
+            }
+        },
+        "motion_device_parameters": {
+            "set_following_error_threshold": {
+                "command": "FE"
+            },
+            "full_step_resolution": {
+                "command": "FR"
+            },
+            "set_gear_ratio": {
+                "command": "GR"
+            },
+            "set_gear_constant": {
+                "command": "QG"
+            },
+            "motor_current": {
+                "command": "QI"
+            },
+            "define_motor_type": {
+                "command": "QM"
+            },
+            "torque_reduction": {
+                "command": "QR"
+            },
+            "set_microstep_factor": {
+                "command": "QS"
+            },
+            "define_tachometer_constant": {
+                "command": "QT"
+            },
+            "set_motor_voltage": {
+                "command": "QV"
+            },
+            "set_master_slave_jog_update_interval": {
+                "command": "SI"
+            },
+            "set_slave_axis_jog_velocity_coefficients": {
+                "command": "SK"
+            },
+            "set_left_limit": {
+                "command": "SL"
+            },
+            "set_units": {
+                "command": "SN",
+                "nn": {
+                        "encoder count":    0,
+                        "motor step":       1,
+                        "millimeter":       2,
+                        "micrometer":       3,
+                        "inches":           4,
+                        "milli-inches":     5,
+                        "micro-inches":     6,
+                        "degree":           7,
+                        "gradian":          8,
+                        "radian":           9,
+                        "milliradian":      10,
+                        "microradian":      11
+                }
+            },
+            "set_right_limit": {
+                "command": "SR"
+            },
+            "set_master_slave_relationship": {
+                "command": "SS"
+            },
+            "set_encoder_resolution": {
+                "command": "SU"
+            }
+        },
+        "programming": {
+            "define_label": {
+                "command": "DL"
+            },
+            "automatic_execution_on_power_on": {
+                "command": "EO"
+            },
+            "enter_program_download_mode": {
+                "command": "EP"
+            },
+            "execute_stored_program": {
+                "command": "EX"
+            },
+            "jump_to_label": {
+                "command": "JL"
+            },
+            "list_program": {
+                "command": "LP"
+            },
+            "quit_program_mode": {
+                "command": "QP"
+            },
+            "save_to_non_volatile_memory": {
+                "command": "SM"
+            },
+            "get_available_program_memory": {
+                "command": "XM"
+            },
+            "delete_a_stored_program": {
+                "command": "XX"
+            }
+        },
+        "trajectory_definition": {
+            "set_acceleration": {
+                "command": "AC"
+            },
+            "set_e_stop_deceleration": {
+                "command": "AE"
+            },
+            "set_deceleration": {
+                "command": "AG"
+            },
+            "set_maximum_acceleration": {
+                "command": "AU"
+            },
+            "set_backlash_compensation": {
+                "command": "BA"
+            },
+            "set_linear_compensation": {
+                "command": "CO"
+            },
+            "set_jog_high_speed": {
+                "command": "JH"
+            },
+            "set_jerk_rate": {
+                "command": "JK"
+            },
+            "set_jog_low_speed": {
+                "command": "JW"
+            },
+            "set_home_search_low_speed": {
+                "command": "OL"
+            },
+            "set_home_search_high_speed": {
+                "command": "OH"
+            },
+            "set_home_search_mode": {
+                "command": "OM"
+            },
+            "set_home_preset_position": {
+                "command": "SH"
+            },
+            "update_filter_parameters": {
+                "command": "UF"
+            },
+            "set_velocity": {
+                "command": "VA"
+            },
+            "set_base_velocity_for_step_motors": {
+                "command": "VB"
+            },
+            "set_maximum_speed": {
+                "command": "VU"
+            }
+        },
+        "flow_control_sequencing": {
+            "define_label": {
+                "command": "DL"
+            },
+            "jump_to_label": {
+                "command": "JL"
+            },
+            "generate_service_request": {
+                "command": "RQ"
+            },
+            "set_device_address": {
+                "command": "SA"
+            },
+            "wait_for_absolute_position_crossing": {
+                "command": "WP"
+            },
+            "wait_for_stop": {
+                "command": "WS"
+            },
+            "wait_for_time": {
+                "command": "WT"
+            }
+        },
+        "io_functions": {
+            "assign_dio_bits_to_execute_stored_programs": {
+                "command": "BG"
+            },
+            "assign_dio_bits_to_inhibit_motion": {
+                "command": "BK"
+            },
+            "enable_dio_bits_to_inhibit_motion": {
+                "command": "BL"
+            },
+            "assign_dio_bits_to_notify_motion_status": {
+                "command": "BM"
+            },
+            "enable_dio_bits_to_notify_motion_status": {
+                "command": "BN"
+            },
+            "set_dio_port_direction": {
+                "command": "BO"
+            },
+            "assign_dio_for_jog_mode": {
+                "command": "BP"
+            },
+            "enable_disable_dio_jog_mode": {
+                "command": "BQ"
+            },
+            "setup_data_acquisition": {
+                "command": "DC"
+            },
+            "get_data_acquisition_done_status": {
+                "command": "DD"
+            },
+            "enable_disable_data_acquisition": {
+                "command": "DE"
+            },
+            "get_data_acquisition_sample_count": {
+                "command": "DF"
+            },
+            "get_acquisition_data": {
+                "command": "DG"
+            },
+            "set_dio_state": {
+                "command": "SB"
+            },
+            "wait_for_dio_bit_low": {
+                "command": "UL"
+            },
+            "wait_for_dio_bit_high": {
+                "command": "UH"
+            }
+        },
+        "group_functions": {
+            "set_group_acceleration": {
+                "command": "HA"
+            },
+            "read_list_of_groups_assigned": {
+                "command": "HB"
+            },
+            "move_group_along_an_arc": {
+                "command": "HC"
+            },
+            "set_group_deceleration": {
+                "command": "HD"
+            },
+            "set_group_e_stop_deceleration": {
+                "command": "HE"
+            },
+            "group_motor_power_off": {
+                "command": "HF"
+            },
+            "set_group_jerk": {
+                "command": "HJ"
+            },
+            "move_group_along_a_line": {
+                "command": "HL"
+            },
+            "create_new_group": {
+                "command": "HN"
+            },
+            "group_motor_power_on": {
+                "command": "HO"
+            },
+            "get_group_position": {
+                "command": "HP"
+            },
+            "wait_for_group_via_point_buffer_near_empty": {
+                "command": "HQ"
+            },
+            "stop_group_motion": {
+                "command": "HS"
+            },
+            "set_group_velocity": {
+                "command": "HV"
+            },
+            "wait_for_group_motion_to_stop": {
+                "command": "HW"
+            },
+            "delete_a_group": {
+                "command": "HX"
+            },
+            "get_group_size": {
+                "command": "HZ"
+            }
+        },
+        "digital_filters": {
+            "set_acceleration_deceleration_feed_forward_gain": {
+                "command": "AF"
+            },
+            "set_closed_loop_update_interval": {
+                "command": "CL"
+            },
+            "set_position_deadband": {
+                "command": "DB"
+            },
+            "set_derivative_gain_kd": {
+                "command": "KD"
+            },
+            "set_integral_gain_ki": {
+                "command": "KI"
+            },
+            "set_proportional_gain_kp": {
+                "command": "KP"
+            },
+            "set_saturation_coefficient_ks": {
+                "command": "KS"
+            },
+            "update_filter_parameters": {
+                "command": "UF"
+            },
+            "set_velocity_feed_forward_gain": {
+                "command": "VF"
+            }
+        },
+        "master_slave_mode_definition": {
+            "set_master_slave_ratio": {
+                "command": "GR"
+            },
+            "set_master_slave_jog_update_interval": {
+                "command": "SI"
+            },
+            "set_slave_axis_jog_velocity_coefficients": {
+                "command": "SK"
+            },
+            "set_master_slave_mode": {
+                "command": "SS"
+            }
+        }
+    }
+}
